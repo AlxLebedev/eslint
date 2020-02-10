@@ -6,20 +6,20 @@
     "extends": [
         "airbnb-base"
     ],
-    //Этот тест уже был сформирован при ответах на вопросы (npx eslint --init)
-    // "globals": {
-    //     "Atomics": "readonly",
-    //     "SharedArrayBuffer": "readonly"
-    // },
-    // "parserOptions": {
-    //     "ecmaVersion": 2018,
-    //     "sourceType": "module"
-    // },
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
     "rules": {
         "no-restricted-syntax": [
             "error",
             "LabeledStatement",
             "WithStatement"
-        ]
+        ],
+        "no-console": "off"
     }
 }
